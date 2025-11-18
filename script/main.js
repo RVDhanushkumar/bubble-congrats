@@ -29,9 +29,8 @@ const animationTimeline = () => {
         .split("")
         .join("</span><span>")}</span>`;
 
-    hbd.innerHTML = `<span>${hbd.innerHTML
-        .split("")
-        .join("</span><span>")}</span>`;
+    hbd.innerHTML = `<span>${Array.from(hbd.innerHTML)
+    .join("</span><span>")}</span>`;
 
     const ideaTextTrans = {
         opacity: 0,
