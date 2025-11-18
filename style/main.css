@@ -294,3 +294,7 @@ body {
 .wish-hbd, .wish h5 {
   font-family: 'Poppins', 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
 }
+
+.profile-picture{
+  border-radius: 10px;
+}

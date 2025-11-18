@@ -197,6 +197,7 @@ const animationTimeline = () => {
         },
         "-=2"
     )
+    .call(startImageSlider)
     .from(".hat", 0.5, {
         x: -100,
         y: 350,
@@ -268,4 +269,25 @@ const animationTimeline = () => {
     replyBtn.addEventListener("click", () => {
         tl.restart();
     });
+}
+
+function startImageSlider() {
+    const img = document.getElementById("imagePath");
+
+    const images = [
+        "./img/madhu2.jpeg",
+        "./img/madhu1.jpeg",
+        "./img/madhu3.jpeg",
+        "./img/madhu4.jpeg",
+        "./img/madhu6.jpeg",
+        "./img/madhu7.jpeg",
+        "./img/madhu8.jpeg"
+    ];
+
+    let index = 0;
+
+    setInterval(() => {
+        index = (index + 1) % images.length;
+        img.src = images[index];
+    }, 3000); 
 }
