@@ -289,6 +289,12 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
+
+  #replay{
+    align-self: center;
+    justify-self: center;
+    max-width: 220px;
+  }
 }
 
 .wish-hbd, .wish h5 {
